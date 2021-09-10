@@ -1,0 +1,147 @@
+// top navigation
+.bg-img{
+    background-image: url("img/jaguar-etype.jpg");
+    min-height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.container-1{
+    float: left;
+    margin-top: $my-space*4;
+    margin-left: 20px;
+    width: auto;
+}
+.top-h1{
+    @include my-headline(70px);
+    color: $my-white;
+    text-transform: capitalize;
+}
+.container-2{
+    float: right;
+    margin-top: $my-space*4.5;
+    margin-right: 20px;
+    width: auto;
+}
+.topnav{
+    overflow: hidden;
+    a{
+            @include my-text(20);
+            color: $my-white;
+            padding: 14px 16px;
+            text-decoration: none;
+            &:hover{
+                color: hotpink;
+            }
+    }
+}
+// h2
+h2{
+    @include my-headline;
+}
+h2:after,h2:before{
+    content:" ";
+    display: block;
+    border-bottom: 1px solid black;
+}
+//Tekst section
+.page-text{
+    margin: $mypaddig*15;
+    @include my-box;
+    padding: $mypaddig;
+}
+
+//Billeder af biler section
+.section-3{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: $my-space;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.card-img-top{
+    border-radius: 0%;
+}
+.card{
+    @include my-box;
+    text-align: start;
+}
+.card-body{
+    @include my-text(15);
+    height: 20px;
+}
+
+//Todelt section
+
+//Køb billetter 
+.jumbotron{
+    @include my-box;
+    height: 250px;
+    padding-top: $mypaddig*7.5;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.lead{
+    @include my-text(15);
+}
+.btn{
+    @include my-buttom-text;
+    background-color: $my-dark-grey;
+    
+}
+.btn-aktiv{
+    background-color: #449b44;
+}
+.btn-passiv{
+    background-color: $my-dark-grey;
+}
+.fat-h3{
+    @include my-text(25);
+    font-weight: bold;
+}
+.passiv{
+    color: darken($mycolor,30%)
+}
+
+//Eventliste
+.container{
+    margin-bottom: $my-space*2;
+
+}
+
+.list-group-item{
+    @include my-box;
+    display: flex;
+    
+}
+.date{
+    float: left;
+    width: 60px;
+    padding: $mypaddig*4;
+    font-size: 20px;
+    text-align: center;
+}
+
+.tal{
+    @include my-headline;
+}
+.by{
+    text-align: left;
+    padding-left: 25px;
+    float: left;
+    padding-top: $mypaddig*2;
+}
+
+//Footer
+.footer{
+    background-color: darken($mycolor, 80%);
+    height: 70px;
+    padding: $mypaddig*5;
+    @include my-text(15);
+    color: $my-white;
+
+}
+
+
